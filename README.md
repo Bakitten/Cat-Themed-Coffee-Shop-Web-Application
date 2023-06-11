@@ -24,15 +24,34 @@ The Cat-Themed Coffee Shop Web Application is designed to provide a charming and
 4. **PHP Database Connection**: The Cat-Themed Coffee Shop Web Application utilizes PHP to connect to a MySQL database, enabling efficient storage and retrieval of data related to our menu, customer orders, and more. This allows for smooth management of the application's data.
 
 ## Installation
-To set up the Cat-Themed Coffee Shop Web Application on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/cat-coffee-shop.git`
-2. Navigate to the project directory: `cd cat-coffee-shop`
-3. Install dependencies: `npm install`
-4. Configure the PHP database connection in the `config.php` file.
-5. Import the necessary database tables and sample data using phpMyAdmin or a similar tool.
-6. Start the application: `npm start`
-7. Access the application in your browser at `http://localhost:3000`.
+To set up the Cat-Themed Coffee Shop Web Application using XAMPP, follow these steps:
+
+1. Download and install [XAMPP](https://www.apachefriends.org/index.html) on your local machine.
+
+2. Clone the repository or download the source code ZIP file and extract it into the `htdocs` directory of your XAMPP installation. Rename the extracted folder to `cat-coffee-shop`.
+
+3. Open XAMPP Control Panel and start the Apache and MySQL services.
+
+4. Open your preferred web browser and visit `http://localhost/phpmyadmin`. This will open phpMyAdmin, the database management tool.
+
+5. Create a new database named `cat_coffee_shop` in phpMyAdmin.
+
+6. In the `cat-coffee-shop` folder, navigate to the `database` directory and import the provided SQL file (`cat_coffee_shop.sql`) into the `cat_coffee_shop` database. This will create the necessary tables and sample data.
+
+7. Configure the PHP database connection in the `config.php` file located in the `cat-coffee-shop` folder. Provide the appropriate hostname, username, password, and database name for your XAMPP setup.
+
+   ```php
+   // MySQLi Configuration
+   $host = 'localhost'; // Change if necessary
+   $user = 'root';      // Change if necessary
+   $password = '';      // Change if necessary
+   $database = 'cat_coffee_shop'; // Change if necessary
+   ```
+
+8. Once the above steps are completed, open your web browser and access the application at `http://localhost/cat-coffee-shop`.
+
+Now you can enjoy the Cat-Themed Coffee Shop Web Application on your local machine using XAMPP.
 
 ## Usage
 Once the application is up and running, you can start exploring and using its features:
